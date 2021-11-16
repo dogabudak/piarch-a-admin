@@ -1,3 +1,3 @@
 mvn package
-java -cp target/my-app-1.0-SNAPSHOT.jar App
 
+java -cp target/piarka-1.0-SNAPSHOT.jar piarka.entries.app.App
