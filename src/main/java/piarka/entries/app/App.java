@@ -42,7 +42,7 @@ private static void enableCORS() {
     // TODO seperate this into seperate files
     public static void main(String[] args) {
         // TODO put this to config
-        MongoClientURI connectionString = new MongoClientURI("mongodb://dogabudak:199100@piarkacluster-shard-00-00.snpsj.mongodb.net:27017,piarkacluster-shard-00-01.snpsj.mongodb.net:27017,piarkacluster-shard-00-02.snpsj.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-thq208-shard-0&authSource=admin&retryWrites=true&w=majority");
+        MongoClientURI connectionString = new MongoClientURI("mongodb://<username>:<password>@piarkacluster-shard-00-00.snpsj.mongodb.net:27017,piarkacluster-shard-00-01.snpsj.mongodb.net:27017,piarkacluster-shard-00-02.snpsj.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-thq208-shard-0&authSource=admin&retryWrites=true&w=majority");
         MongoClient mongoClient = new MongoClient(connectionString);
         MongoDatabase database = mongoClient.getDatabase("piarka");
 

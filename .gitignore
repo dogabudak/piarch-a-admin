@@ -1,4 +1,5 @@
 target/
 *.log
 .idea/
+.env/
 .DS_Store
